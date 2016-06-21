@@ -1,0 +1,109 @@
+doctype html
+html
+  include ../common/_head
+  body
+    <!--[if lt IE 7]>
+    <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
+    <![endif]-->
+
+    .wrapper-works
+      header.head-works
+        .head-ws__top.clearfix
+          .top__social
+            ul.ws__social
+              li: a(class="ws_socials ws_vk", href="#")
+              li: a(class="ws_socials ws_gh", href="#")
+              li: a(class="ws_socials ws_in", href="#")
+          .top__menu
+            .top__menu-icon
+              a.menu-icon__link
+                img.menu-icon-img(src="../")
+            .top__menu-ul
+              ul
+                li: a(class="menu-link", href="#")
+                li: a(class="menu-link", href="#")
+                li: a(class="menu-link", href="#")
+                li: a(class="menu-link", href="#")
+        .head-ws__user
+          .wel_info_photo
+            img(src="../assets/images/user/my_photo.jpg", class="wel_photo")
+          .ws_info_name Виктория Харченко
+          .ws_info_text Личный сайт веб разработчика
+        .head-bg
+          .head-arrow
+            a(class="arrow_down", href="#")
+          .head-title
+            span.title-works Мои работы
+      section.my-works.clearfix
+        .my-works-left
+          .left-content
+            .title-left
+              span.title-left-text Мой сайт
+            .technology-left
+              span.technology-left-text html, css, javascript
+            .link-left
+              a(class="link-left-text", href="#") Посмотреть сайт
+        .my-works-right
+          .my-works-present
+          .ma-works-wait.clearfix
+            .wait-left
+            .wait-right
+      section.say-about-me
+        .about-me
+          span.about-me-text Что обо мне <br> говорят
+        .people-say.clearfix
+          .people-say-left
+            .people-say-text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессоных ночей!
+            .people-say-author
+              .people-say-photo
+                img(src="../assets/images/user/dima.png")
+              .people-say-name
+                .name-text Ковальчук Дмитрий
+                .name-loft основатель Loftschool
+          .people-say-right
+            .people-say-text Этот код выдержет любые испытания. Только пожалуйста, не загружайте сайт на слишком старых браузерах!
+            .people-say-author
+              .people-say-photo
+                img(src="../assets/images/user/zar.png")
+              .people-say-name
+                .name-text Зар Захаров
+                .name-loft главный преподаватель
+        .form-main
+          .form-content
+            .form-title
+              span.form-title-text Связаться со мной
+            form
+              input(class="input-name", type="text", placeholder="Имя")
+              input(class="input-mail", type="email", placeholder="Email")
+              textarea(class="form-text", placeholder="Ваше сообщение", )
+              .input-button
+                input(class="form-sub sub-btn ", type="submit", value="Отправить")
+                input(class="form-sub", type="reset", value="Очистить")
+        .arrow-up
+          a(class="arrow-up-foot" href="#")
+      footer.footer
+        .footer-up
+          .footer-up-menu
+            ul
+              li.up-menu-li: a(class="up-menu-link", href="#") Мои работы
+              li.up-menu-li: a(class="up-menu-link", href="#") Обо мне
+              li.up-menu-li: a(class="up-menu-link", href="#") Блог
+              li.up-menu-li: a(class="up-menu-link", href="#") Авторизация
+          .footer-up-social
+            ul
+              li.up-soc: a(class="up-socials up-vk", href="#")
+              li.up-soc: a(class="up-socials up-gh", href="#")
+              li.up-soc: a(class="up-socials up-in", href="#")
+        .footer-down
+          .down-text-left Я веб-разработчик из Симферополя, и этот сайт я сделала в рамках обучения в Школе онлайн образования LoftSchool
+          .down-text-right © Виктория Харченко | создано с любовью в LoftSchool | 2016
+
+
+
+
+
+
+
+
+
+

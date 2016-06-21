@@ -1,0 +1,57 @@
+doctype html
+html
+  include common/_head
+  body
+    <!--[if lt IE 7]>
+    <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
+    <![endif]-->
+
+    .wrapper
+      header.log_in
+        a.log_link(href="#") Авторизоваться
+      section.welcome
+        .wel_content
+          .welcome_info
+            .wel_info_photo
+              img(src="/assets/images/user/my_photo.jpg", class="wel_photo")
+            .wel_info_name Виктория Харченко
+            .wel_info_text Личный сайт веб разработчика
+            .wel_info_social
+              ul.wel_social
+                li: a(class="wel_socials wel_vk", href="#")
+                li: a(class="wel_socials wel_gh", href="#")
+                li: a(class="wel_socials wel_in", href="#")
+          .welcome_menu
+            ul.wel_menu
+              li: a(class="wel_menu_a menu_portfolio", href="pages/works.html") Мои работы
+              li: a(class="wel_menu_a menu_about", href="pages/about.html") Обо мне
+              li: a(class="wel_menu_a menu_blog", href="#") Блог
+        .wel-content-log
+          .form-log
+            .form-title
+              span.form-title-text Авторизуйтесь
+            form.form-input
+              .wrap-form
+                .login-icon
+                input(class="input-login", type="text", placeholder="Логин")
+              .wrap-form
+                .login-icon
+                input(class="input-pass", type="password", placeholder="Пароль")
+              label.lab-rad
+                input(class="input-box", type="checkbox", checked)
+                span.span-bpx Я человек
+              .question Вы точно не робот?
+              .form-radio
+                label.label
+                  input(class="input-radio", type="radio", name="robot", checked)
+                  span.radio-span Да
+                label.label
+                  input(class="input-radio", type="radio", name="robot")
+                  span.radio-span2 Не уверен
+              .input-button-wel
+                a(class="form-wel", href="#") На главную
+                input(class="form-log-in", type="submit", value="Войти")
+
+    //end wrapper
+    footer.footer-welcome
+      .footer_text © Виктория Харченко | создано с любовью в LoftSchool | 2016

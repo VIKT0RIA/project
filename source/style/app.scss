@@ -1,0 +1,298 @@
+@import 'common/fonts';
+// import находятся внизу
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+html {
+  position: relative;
+}
+body {
+  font-family: 'robotomedium';
+}
+input {
+  padding: 0;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;}
+.wrapper {
+  background: url("../images/bg/bg_welcome.jpg") no-repeat;
+  background-size: cover;
+  min-height: 100%;
+  height: auto;
+  margin-bottom: -45px; }
+
+.wrapper:after {
+  content: "";
+  display: block;
+  height: 45px; }
+
+.log_in {
+  height: 70px;
+  margin-bottom: 75px;
+  position: relative;
+}
+.log_link {
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+  height: 43px;
+  width: 178px;
+  line-height: 43px;
+  text-align: center;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 25px;
+
+  &:hover {
+    color: #00bfa5;
+    background: #ffffff;
+  }
+  &:active .wel_content {
+    left: -9999px;
+  }
+}
+
+.welcome {
+  position: relative;
+  width: 380px;
+  height: 405px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+.wel_content {
+  border-radius: 5px;
+  overflow: hidden;
+}
+.welcome_info {
+  background-color: rgba(247,247,246,0.85);
+  text-align: center; }
+
+.wel_info_photo {
+  padding:33px 0 17px 0;
+}
+.wel_photo {
+  width: 142px;
+  height: 142px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.wel_info_name {
+  font-size: 28px;
+  color: #455a64;
+  padding-bottom: 10px;
+}
+.wel_info_text {
+  font-family: 'robotoregular';
+  font-size: 16px;
+  color: #667880;
+  padding-bottom: 33px;
+}
+.wel_info_social {
+  padding-bottom: 37px;
+}
+.wel_social>li {
+  display: inline-block;
+}
+.wel_socials {
+  width: 31px;
+  height: 23px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.wel_vk {
+  background-image: url(../images/icon/vk.png);
+}
+.wel_gh {
+  background-image: url(../images/icon/github.png);
+  margin: 0 25px;
+}
+.wel_in {
+  background-image: url(../images/icon/in.png);
+}
+.wel_vk:hover {
+  background-image: url(../images/icon/vk_hover.png);
+}
+.wel_gh:hover {
+  background-image: url(../images/icon/github_hover.png);
+  margin: 0 25px;
+}
+.wel_in:hover {
+  background-image: url(../images/icon/in_hover.png);
+}
+.wel_menu>li {
+  display: inline-block;
+}
+.welcome_menu>ul {
+  font-size: 0;
+}
+.wel_menu_a {
+  font-size: 16px;
+  height: 40px;
+  color: #ffffff;
+  background-color: rgba(0,191,165,.85);
+  line-height: 40px;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  box-sizing: border-box;
+}
+.menu_portfolio {
+  width: 155px;
+}
+.menu_about {
+  width: 125px;
+  border-left: 2px solid #74cac3;
+  border-right: 2px solid #74cac3;
+
+}
+.menu_blog {
+  width: 100px;
+}
+.wel_menu_a:hover {
+  background-color: rgba(0,191,165,.55);
+}
+.social {
+  display: inline-block;
+}
+.footer-welcome {
+  color: #ffffff;
+  height: 45px;
+  text-align: center;
+}
+.footer_text {
+  font-family: 'robotolight';
+  font-size: 16px/1.5;
+}
+
+/////////////////  LOG IN  ///////////////
+.wel_content{
+  position: absolute;
+  //left: -9999px;
+}
+.wel-content-log {
+  position: absolute;
+  left: -9999px;
+  height: 405px;
+}
+.form-log {
+  position: relative;
+  height: 405px;
+  border-radius: 5px;
+  overflow: hidden;
+  display: inline-block;
+  background: rgba(#ffffff,.8);
+  box-sizing: border-box;
+}
+.form-input {
+  height: 300px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.wrap-form {
+  display: inline-block;
+  font-size: 0;
+  vertical-align: top;
+  padding: 0 20px 20px 20px;
+  text-align: center;
+  box-sizing: border-box;
+  height: 65px;
+}
+
+.login-icon,.login-icon {
+  display: inline-block;
+  vertical-align: top;
+  width: 45px;
+  height: 45px;
+  background-color: #f0efe9;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.input-login,.input-pass {
+  height: 45px;
+  width: 280px;
+  border: none;
+  padding: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding-left: 15px;
+  font-size: 16px;
+}
+.span-bpx,.question,.label {
+  font-family: 'robotoregular';
+  font-size: 16px;
+  color: #455a64;
+}
+.input-box {
+  width: 20px;
+  height: 20px;
+  //background: #26bbaa;
+  //border: none;
+}
+.span-bpx {
+  padding-left: 10px;
+  vertical-align: top;
+}
+.question {
+  font-weight: bold;
+  color: rgba(#455a64,.8);
+  padding: 10px 0 10px 0;
+}
+.input-radio {
+
+  width: 20px;
+  height: 20px;
+  vertical-align: top;
+}
+.radio-span {
+  padding: 0 40px 0 10px;
+}
+.radio-span2 {
+  padding-left: 10px;
+}
+.input-button-wel {
+  font-size: 0;
+  height: 45px;
+  position: absolute;
+  bottom: 0;
+  margin-top: 35px;
+}
+.form-wel,.form-log-in {
+  width: 190px;
+  height: 45px;
+  background: #26bbaa;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #ffffff;
+}
+.form-wel {
+  display: inline-block;
+  text-align: center;
+  border-right: 2px solid #82cfc9;
+  text-decoration: none;
+  line-height: 45px;
+}
+.form-log-in {
+  
+  padding: 0;
+  border: none;
+  vertical-align: top;
+
+}
+
+
+
+
+
+
+@import 'common/works';
+
+
+
